@@ -8,13 +8,13 @@
 </head>
 <body>
 	<h1>Post Login</h1>
-	
-	<%
-		out.println("Tu usuario es : "+ request.getParameter("usuario")) ;
-	%>
-	<%="Tu contraseña es : " + request.getParameter("contrasena")%>
-	
 
+	<h2>Request</h2>
+	<%="usuario: "+request.getAttribute("usuario") +" contraseña" + request.getAttribute("contrasena")%>
+	<h2>Sesion</h2>
+	<%="usuario: "+session.getAttribute("usuario") +" contraseña" + session.getAttribute("contrasena")%>
+	<h2>Contexto</h2>	
+	<%="usuario: "+application.getAttribute("usuario") +" contraseña" + application.getAttribute("contrasena")%>
 	 
 </body>
 </html>
