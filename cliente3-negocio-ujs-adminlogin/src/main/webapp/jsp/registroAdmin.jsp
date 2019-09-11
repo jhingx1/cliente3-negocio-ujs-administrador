@@ -67,7 +67,7 @@
 
              <div id="navegacion-fm" class="navbar-collapse collapse">
                <ul class="nav navbar-nav">
-                 <li class=""><a href="#">Inicio</a></li>               
+                 <li class=""><a href="?accion=inicio">Inicio</a></li>               
                  <li class="active"><a href="#">Registrar Admin</a></li>
                  <li><a href="#">Consultar Admin</a></li>
                  <li><a href="#">Registrar Pregunta</a></li>
