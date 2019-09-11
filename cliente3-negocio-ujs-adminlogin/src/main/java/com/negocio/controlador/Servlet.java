@@ -227,7 +227,7 @@ public class Servlet extends HttpServlet {
 					if (!cuenta.existeAdministrador(request.getParameter("email"))) {
 						if (cuenta.registrarAdministrador(administrador)) {//True si se pudo registra el admin
 							log.info("Ingresado correctamente como: ");
-							request.setAttribute("msg", "administrador credo correctamente");
+							request.setAttribute("msg", "<span style='color:blue'>Administrador Creado Correctamente</span>");
 						} else {
 							log.error("El admin no fue creado");
 							//error en la amisma pagina
@@ -242,6 +242,7 @@ public class Servlet extends HttpServlet {
 					request.setAttribute("msg", administrador.getErroresForm());
 				}
 				
+				//se queda en la misma pagina
 				setRespuestaControlador("registroAdmin").forward(request, response);
 				
 			}else if(accion.equals("registrarPregunta")){

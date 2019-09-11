@@ -65,7 +65,7 @@ public class ServletAjax extends HttpServlet {
 		if(accion.equals("cargarImagen")){
 			//System.out.println("Peticion Ajax recibida correctamente");
 			//Ruta donde se va a guardar la imagen cargada
-			String s = cargarImagen(request, "D:/REPO_MAVEN_GRADLE/REPO/cliente3-negocio-ujs-adminlogin/src/main/webapp/imagenes");
+			String s = cargarImagen(request, "C:/Users/Mark1/Documents/GitHub/cliente3-negocio-ujs-administrador/cliente3-negocio-ujs-adminlogin/src/main/webapp/imagenes");
 			
 			//sesion atibuto,
 			//para guardar en la base de datos, la ruta de la imagen.
